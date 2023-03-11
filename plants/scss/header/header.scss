@@ -1,0 +1,40 @@
+.header {
+  padding: 58px 0;
+  background-color: var(--bg);
+
+  @media(max-width: 1024px) {
+    padding: 50px 0;
+  }
+
+  @media(max-width: 760px) {
+    padding: 50px 0 40px;
+  }
+
+  @media(max-width: 380px) {
+    height: var(--header-mob);
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 760px) {
+      align-items: flex-start;
+    }
+
+    @media(max-width: 380px) {
+      min-height: var(--header-mob);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+}

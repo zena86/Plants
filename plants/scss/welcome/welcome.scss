@@ -1,0 +1,120 @@
+.welcome {
+  padding: 65px 0 55px;
+  background-color: var(--bg);
+
+  @media(max-width: 1024px) {
+    padding: 35px 0 70px;
+  }
+
+  @media(max-width: 480px) {
+    padding: 24px 0;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 765px) {
+      flex-direction: column;
+    }
+  }
+
+  &__pic {
+    position: relative;
+    top: -8px;
+    width: 448px;
+    height: 407px;
+    flex: 0 0 448px;
+    padding: 12% 0;
+    margin-right: 40px;
+
+    @media(max-width: 1024px) {
+      top: 0;
+      max-width: 280px;
+      max-height: 254px;
+      flex: 0 0 280px;
+      margin-right: 0;
+      margin-left: 40px;
+      order: 2;
+    }
+
+    @media(max-width: 765px) {
+      display: none;
+    }
+  }
+
+  &__descr {
+    max-width: 550px;
+
+    @media(max-width: 1024px) {
+      flex: 1 1 60%;
+      order: 1;
+    }
+  }
+
+  &__title {
+    font-size: 45px;
+    color: var(--brand-1);
+    margin-bottom: 42px;
+    line-height: calc(50 / 45);
+
+    @media(max-width: 1024px) {
+      margin: 0 0 30px;
+      font-size: 35px;
+      line-height: calc(50 / 35);
+    }
+
+    @media(max-width: 480px) {
+      max-width: 330px;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    span {
+      color: var(--accent-1);
+    }
+  }
+
+  &__text {
+    max-width: 530px;
+    margin-bottom: 48px;
+    line-height: calc(35 / 20);
+
+    @media(max-width: 1024px) {
+      line-height: calc(25 / 16);
+      margin-bottom: 36px;
+      margin-left: 5px;
+    }
+
+    @media(max-width: 480px) {
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+  }
+
+  &__btn {
+    padding: 10px 27px;
+    text-transform: uppercase;
+    border: 2px solid var(--accent-2);
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+
+    @media(max-width: 1024px) {
+      padding: 11px 27px;
+    }
+
+    @media(max-width: 480px) {
+      padding: 10px 16px;
+      font-size: 10px;
+    }
+
+    &:hover {
+      background-color: var(--accent-2);
+      color: #fff;
+    }
+  }
+}

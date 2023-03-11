@@ -1,0 +1,116 @@
+.service {
+  padding: 40px 0 65px;
+  background-color: var(--bg);
+}
+@media (max-width: 1024px) {
+  .service {
+    padding: 60px 0 30px;
+  }
+}
+@media (max-width: 480px) {
+  .service {
+    padding: 30px 0 24px;
+  }
+}
+.service__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+@media (max-width: 1024px) {
+  .service__top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .service__top {
+    margin-bottom: 20px;
+  }
+}
+.service__title {
+  max-width: 330px;
+}
+@media (max-width: 1220px) {
+  .service__title {
+    max-width: 280px;
+  }
+}
+@media (max-width: 1024px) {
+  .service__title {
+    text-align: left;
+    margin-bottom: 42px;
+  }
+}
+@media (max-width: 480px) {
+  .service__title {
+    max-width: 190px;
+    margin-bottom: 35px;
+  }
+}
+.service__sort {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(660px + (100% - 990px) / 2);
+}
+@media (max-width: 1220px) {
+  .service__sort {
+    flex-basis: calc(560px + (100% - 840px) / 2);
+  }
+}
+@media (max-width: 480px) {
+  .service__sort {
+    margin-bottom: 9px;
+  }
+}
+.service__btn {
+  margin-right: 40px;
+  font-family: "Inika", serif;
+  transition: var(--transition);
+}
+@media (max-width: 710px) {
+  .service__btn {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 35px;
+    margin-right: 8px;
+    margin-bottom: 9px;
+    font-size: 15px;
+    line-height: 1.3333333333;
+    font-weight: 400;
+  }
+}
+@media (max-width: 480px) {
+  .service__btn {
+    width: 120px;
+    height: 35px;
+    margin-right: 8px;
+    margin-bottom: 9px;
+    font-size: 15px;
+    line-height: 1.3333333333;
+    font-weight: 400;
+  }
+}
+.service__btn:last-child {
+  margin-right: 0;
+}
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -55px;
+}
+@media (max-width: 1220px) {
+  .service__list {
+    margin-left: -30px;
+  }
+}
+@media (max-width: 710px) {
+  .service__list {
+    justify-content: center;
+    margin-left: 0;
+  }
+}

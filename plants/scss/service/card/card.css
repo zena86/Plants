@@ -1,0 +1,102 @@
+.card {
+  flex-basis: 330px;
+  margin-left: 55px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  margin-bottom: 55px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+@media (max-width: 1220px) {
+  .card {
+    flex-basis: 280px;
+    margin-left: 30px;
+    margin-bottom: 38px;
+  }
+}
+@media (max-width: 710px) {
+  .card {
+    flex-basis: 330px;
+    margin-left: 0;
+    margin-bottom: 55px;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    flex-basis: 280px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .card:last-child {
+    margin-bottom: 0;
+  }
+}
+.card:hover {
+  border: 1px solid var(--accent-1);
+}
+.card:hover .card__title {
+  color: var(--accent-1);
+}
+.card.blur {
+  filter: blur(2px);
+}
+.card.blur:hover {
+  border: 1px solid var(--border-color);
+}
+.card.blur:hover .card__title {
+  color: var(--accent-2);
+}
+.card__pic {
+  padding: 106.5% 0 0;
+  margin-bottom: 3px;
+}
+@media (max-width: 1220px) {
+  .card__pic {
+    margin-bottom: 2px;
+    padding: 125.5% 0 0;
+  }
+}
+@media (max-width: 710px) {
+  .card__pic {
+    padding: 107% 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .card__pic {
+    padding: 126% 0 0;
+  }
+}
+.card__pic img {
+  border-radius: 20px 20px 0 0;
+}
+.card__desc {
+  padding: 8px 25px 35px;
+  text-align: center;
+}
+@media (max-width: 1220px) {
+  .card__desc {
+    padding: 8px 25px 18px;
+  }
+}
+@media (max-width: 710px) {
+  .card__desc {
+    padding: 8px 25px 35px;
+  }
+}
+@media (max-width: 480px) {
+  .card__desc {
+    padding: 8px 25px 18px;
+  }
+}
+.card__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--accent-2);
+  transition: var(--transition);
+}
+.card__text {
+  font-size: 16px;
+  line-height: 1.25;
+}

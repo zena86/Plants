@@ -1,0 +1,39 @@
+:root {
+  --bg: #EDF2EC;
+  --bg-active: #D6E7D2;
+  --bg-2: #DCE9D9;
+  --bg-3: #C1E698;
+  --bg-4: #8BA07E;
+  --accent-1: #499A18;
+  --accent-2: #E06733;
+  --brand-1: #717171;
+  --brand-2: #636060;
+  --brand-3: #010201;
+  --black: #000;
+  --white: #FFF;
+  --border-color: #E3E1D5;
+  --arrow-bg: #D9D9D9;
+  --arrow-active: #AEA1A1;
+  --border-radius: 20px;
+  --transition: all 0.5s ease;
+  --header-mob: 96px;
+  // --desktop: 1200px;
+  // --laptop: 1024px;
+  // --tablet: 768px;//600px
+  // --mobile: 480px;//480px
+}
+
+@import 'scss/general/general.scss';
+@import 'scss/header/header.scss';
+@import 'scss/header/logo/logo.scss';
+@import 'scss/header/menu/menu.scss';
+@import 'scss/welcome/welcome.scss';
+@import 'scss/about/about.scss';
+@import 'scss/service/service.scss';
+@import 'scss/service/card/card.scss';
+@import 'scss/prices/prices.scss';
+@import 'scss/prices/accordion/accordion.scss';
+@import 'scss/contacts/contacts.scss';
+@import 'scss/contacts/select/select.scss';
+@import 'scss/contacts/office/office.scss';
+@import 'scss/footer/footer.scss';
